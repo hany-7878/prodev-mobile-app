@@ -1,13 +1,14 @@
-import { AntDesign, EvilIcons, Feather, FontAwesome, Ionicons } from "@expo/vector-icons";
-import { Tabs } from "expo-router";
+// File: app/(home)/_layout.tsx
 import React from "react";
+import { Tabs } from "expo-router";
+import { AntDesign, EvilIcons, Feather, FontAwesome, Ionicons } from "@expo/vector-icons";
 
-const HomeRootLayout = () => {
+export default function HomeRootLayout() {
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#34967C",
-        headerShown: false, // Hide headers globally
+        headerShown: false,
       }}
     >
       <Tabs.Screen
@@ -51,6 +52,4 @@ const HomeRootLayout = () => {
       />
     </Tabs>
   );
-};
-
-export default HomeRootLayout;
+}
